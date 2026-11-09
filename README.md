@@ -15,39 +15,20 @@ pip install paramiko
 python batch_info.py devices.yml
 ```
 
-## Pro 包（¥59）— 10 个生产级脚本
 
-| 脚本 | 用途 | 价值 |
-|------|------|------|
-| batch_config_push.py | 批量下发配置（模板+变量，先 diff 后确认） | 变更窗口神器 |
-| port_locator.py | 全网定位 MAC/IP → 接入端口（跨设备 MAC 表追踪） | 排障提速 10x |
-| config_audit.py | 基线合规审计（弱口令/telnet/默认VLAN/未用端口） | 等保检查利器 |
-| interface_report.py | 接口利用率报表（CRC/带宽/错包）周报自动生成 | 周报自动化 |
-| batch_save.py | 批量保存配置 + 时间戳归档 | 配置管理 |
-| vlan_map.py | 全网 VLAN 分布地图（哪些交换机有哪些 VLAN） | 网络梳理 |
-| stp_root_check.py | STP 根桥位置审计 + 异常检测 | 二层排障 |
-| dhcp_snoop_audit.py | DHCP Snooping/ARP 防护配置核查 | 安全合规 |
-| syslog_setup.py | 批量配置 syslog 指向采集器 | 日志集中化 |
-| batch_reboot.py | 批量重启（维护窗口，二次确认+延时） | 批量操作 |
+## Pro 脚本包（¥59，6 个独占脚本）
 
-**购买**: 邮箱 2945362558@qq.com（微信/支付宝 ¥59，发完整包+更新）**
+免费版（2 个）已进 PyPI 包 [netops-toolkit](https://pypi.org/project/netops-toolkit/)（info/find/save/interfaces/locate/audit 六子命令）。
+Pro 是 **netops-toolkit 没有的 6 个高危操作脚本**——改动型/批量型，企业内部场景刚需：
 
-## 设备清单格式（devices.yml）
+| # | 脚本 | 能力 | 为什么值得 |
+|---|---|---|---|
+| 1 | batch_config_push.py | 模板+变量批量下发配置 | 变更窗口一次改 200 台，预览+确认+并发 |
+| 2 | batch_reboot.py | 批量重启（二次确认+延时） | 深夜割接必备，避免逐台敲 |
+| 3 | syslog_setup.py | 四厂商 syslog+save 一键配置 | 等保/审计合规第一步 |
+| 4 | vlan_map.py | 全网 VLAN 分布表+孤儿 VLAN 检出 | 清理僵尸 VLAN，防环路隐患 |
+| 5 | stp_root_check.py | 根桥校验+漂移告警 | 根桥漂移=环路前兆，--expect-root 校验 |
+| 6 | dhcp_snoop_audit.py | DHCP Snooping 三项合规检查 | 防私接路由器的标配 |
 
-```yaml
-devices:
-  - name: core-sw1
-    host: 192.168.1.1
-    vendor: h3c          # h3c / huawei / cisco / ruijie
-    username: admin
-    protocol: ssh
-```
-
-## 相关项目
-
-- [netcfg-vault](https://github.com/BG8CFB/netcfg-vault) — 批量配置备份 + AES-256-GCM 加密保险库（¥99 Pro）
-- [netops-cheatsheets](https://github.com/BG8CFB/netops-cheatsheets) — H3C/华为/思科速查表 + 巡检模板（¥39 Pro）
-
-## License
-
-Free 脚本 MIT。Pro 包内容受版权保护，禁止转售。
+**交付方式**: 邮件发送全部 6 个 .py（无加密、无 license 文件，一次买断）+ 后续更新免费。
+**购买**: 邮箱 2945362558@qq.com（注明 netops-scripts Pro）
