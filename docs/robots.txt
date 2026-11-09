@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bg8cfb.github.io/netops-scripts/sitemap.xml
