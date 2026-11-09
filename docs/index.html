@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>netops-scripts — 网络工程师自动化脚本包</title>
+<meta name="description" content="网络运维自动化脚本包：批量采集/批量下发/全网定位/合规审计，支持 H3C 华为 思科 锐捷">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#58a6ff;--pro:#d29922}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.7}
+.wrap{max-width:960px;margin:0 auto;padding:48px 24px}
+h1{font-size:2.2em;margin-bottom:8px}
+.sub{color:var(--mut);font-size:1.05em;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:24px 0}
+.card{background:var(--card);border:1px solid #30363d;border-radius:8px;padding:20px}
+.card h3{color:var(--acc);margin-bottom:8px;font-size:1.05em}
+.card p{color:var(--mut);font-size:.92em}
+.tag{display:inline-block;background:#1f6feb33;color:var(--acc);border-radius:99px;padding:2px 10px;font-size:.8em;margin:2px}
+table{width:100%;border-collapse:collapse;margin:16px 0;background:var(--card);border-radius:8px;overflow:hidden}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid #30363d;font-size:.92em}
+th{color:var(--acc);background:#1f6feb18}
+.cta{display:inline-block;background:#238636;color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;margin:8px 8px 24px 0}
+.cta.pro{background:#9e6a03}
+.price{font-size:1.6em;color:var(--pro);font-weight:700}
+code{background:#30363d88;padding:2px 6px;border-radius:4px;font-size:.88em}
+.foot{color:var(--mut);font-size:.85em;margin-top:40px;border-top:1px solid #30363d;padding-top:16px}
+</style>
+</head>
+<body><div class="wrap">
+<h1>netops-scripts</h1>
+<p class="sub">网络工程师自动化脚本包 — 把重复运维变成一条命令 · H3C / 华为 / 思科 / 锐捷</p>
+<span class="tag">批量采集</span><span class="tag">批量下发</span><span class="tag">全网定位</span><span class="tag">合规审计</span><span class="tag">报表生成</span>
+<div class="grid">
+<div class="card"><h3>⚡ 批量信息采集</h3><p>一台命令拉全网设备版本/CPU/内存/接口状态，CSV 汇总，周报素材直接生成</p></div>
+<div class="card"><h3>🎯 全网端口定位</h3><p>IP/MAC 出现在哪台设备哪个口？跨设备 MAC 表追踪，排障从 30 分钟到 30 秒</p></div>
+<div class="card"><h3>🛡️ 合规审计</h3><p>弱口令/telnet/默认 VLAN/未shutdown端口，等保检查一次跑完</p></div>
+<div class="card"><h3>📤 批量下发</h3><p>模板+变量批量推配置，先 diff 后确认，变更窗口不再一台台敲</p></div>
+</div>
+<table>
+<tr><th></th><th>Free</th><th class="price">Pro ¥59</th></tr>
+<tr><td>脚本数量</td><td>2 个</td><td><b>12 个</b>（含 Free 2 个）</td></tr>
+<tr><td>批量采集 → CSV</td><td>✅</td><td>✅</td></tr>
+<tr><td>配置内搜索定位</td><td>✅</td><td>✅</td></tr>
+<tr><td>批量下发配置（diff 确认）</td><td>—</td><td>✅</td></tr>
+<tr><td>全网 MAC/IP 端口定位</td><td>—</td><td>✅</td></tr>
+<tr><td>合规基线审计</td><td>—</td><td>✅</td></tr>
+<tr><td>接口利用率周报</td><td>—</td><td>✅</td></tr>
+<tr><td>VLAN 全网分布图</td><td>—</td>✅</tr>
+<tr><td>STP 根桥审计</td><td>—</td><td>✅</td></tr>
+<tr><td>批量重启/保存/日志配置</td><td>—</td><td>✅</td></tr>
+<tr><td>后续更新</td><td>—</td><td>终身</td></tr>
+</table>
+<a class="cta pro" href="mailto:2945362558@qq.com?subject=netops-scripts%20Pro%20购买">购买 Pro ¥59（微信/支付宝）</a>
+<a class="cta" href="https://github.com/BG8CFB/netops-scripts">GitHub 免费版</a>
+<p class="foot">配套：<a href="https://github.com/BG8CFB/netcfg-vault" style="color:var(--acc)">netcfg-vault</a> 配置备份加密库（Pro ¥99）· <a href="https://github.com/BG8CFB/netops-cheatsheets" style="color:var(--acc)">netops-cheatsheets</a> 速查表包（Pro ¥39）<br>© 2026 BG8CFB</p>
+</div></body></html>

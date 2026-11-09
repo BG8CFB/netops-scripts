@@ -1,0 +1,11 @@
+devices:
+  - name: core-sw1
+    host: 192.168.1.1
+    vendor: h3c
+    username: admin
+    protocol: ssh
+  - name: acc-sw2
+    host: 192.168.1.2
+    vendor: huawei
+    username: admin
+    protocol: ssh
